@@ -30,12 +30,8 @@ Welcome to the Pizzeria Website project! This web application serves as an onlin
 
 ## Technologies Used
 
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="24" alt="HTML5" /> HTML5
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="24" alt="CSS3" /> CSS3
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="24" alt="JavaScript" /> JavaScript
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="24" alt="React" /> React
-- <img src="https://raw.githubusercontent.com/tailwindlabs/brand/master/tailwindcss-mark.svg" height="24" alt="TailwindCSS" />
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="24" alt="Bootstrap" /> Bootstrap
+- HTML5, CSS3. JavaScript
+- Bootstrap, React, TailwindCSS
 
 ## Getting Started
 
