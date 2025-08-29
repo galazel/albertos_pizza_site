@@ -33,27 +33,27 @@ export default function NavigationBar() {
         <header className="d-flex justify-content-center py-3">
           <ul className="nav nav-pill">
             <li className="nav-item">
-              <Link to="/" className="nav-link text-white" aria-current="page" >
+              <Link to="/home" className="nav-link text-white" aria-current="page" >
                 HOME
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/features" className="nav-link text-white">
+              <Link to="/menu" className="nav-link text-white">
                 OUR MENU
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/pricing" className="nav-link text-white">
+              <Link to="/about" className="nav-link text-white">
                 ABOUT
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/faqs" className="nav-link text-white">
+              <Link to="/offers" className="nav-link text-white">
                 OFFERS
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/faqs" className="nav-link text-white">
+              <Link to="/contact" className="nav-link text-white">
                 CONTACT
               </Link>
             </li>

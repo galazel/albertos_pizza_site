@@ -7,5 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body
+{
+    font-family: "Lexend Exa";
+}
+
 
 

@@ -2,10 +2,11 @@ import React from "react";
 import NavigationBar from "./common/NavigationBar";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGooglePlay, faApple } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
-    <main className="bg-[url('/home-images/pizza-bg-home.jpg')] h-[90vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
+    <main className="bg-[url('/home-images/pizza-bg-home.jpg')] h-[100vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="z-10">
         <div>
@@ -51,38 +52,38 @@ export default function Home() {
               className="w-[700px] rounded-full"
             />
           </div>
-          <div className="flex gap-5 p-2">
-            <div className=" w-[350px] p-2 flex flex-col gap-2 justify-center items-center">
+          <div className="flex gap-5 p-2  h-[60vh]">
+            <div className="pb-5 w-[350px] flex flex-col gap-2 justify-center items-center">
               <img
                 src="/home-images/fresh-ingredients.jpg"
                 alt="fresh-ingredients"
                 className="w-[280px] h-[280px] rounded-full"
               />
-              <p className="text-red-600 text-3xl">FRESH INGREDIENTS</p>
+              <p className="text-red-600 text-lg">FRESH INGREDIENTS</p>
               <p className="text-center">
                 Risus egestas felis, purus ultricies tortor feugiat aliquam
                 euismod senectus sed amet felis viverra mi bibendum.
               </p>
             </div>
-            <div className=" w-[360px] p-2 flex flex-col gap-2 justify-center items-center">
+            <div className=" pt-5 w-[360px]  flex flex-col gap-1 justify-center items-center">
               <img
                 src="/home-images/home-made-mozarella.jpg"
                 alt="fresh-ingredients"
-                className="w-[280px] h-[280px] rounded-full"
+                className=" w-[280px] h-[280px] rounded-full"
               />
-              <p className="text-red-600 text-3xl">HANDMADE MOZARELLA</p>
+              <p className="text-red-600 text-lg">HANDMADE MOZARELLA</p>
               <p className="text-center">
                 Risus egestas felis, purus ultricies tortor feugiat aliquam
                 euismod senectus sed amet felis viverra mi bibendum.
               </p>
             </div>
-            <div className=" w-[350px] p-2 flex flex-col gap-2 justify-center items-center">
+            <div className=" w-[350px] pb-5 flex flex-col gap-2 justify-center items-center">
               <img
                 src="/home-images/home-made-sauce.jpg"
                 alt="fresh-ingredients"
                 className="w-[280px] h-[280px] rounded-full"
               />
-              <p className="text-red-600 text-3xl">"SECRET RECIPE" SAUCE</p>
+              <p className="text-red-600 text-lg">"SECRET RECIPE" SAUCE</p>
               <p className="text-center">
                 Risus egestas felis, purus ultricies tortor feugiat aliquam
                 euismod senectus sed amet felis viverra mi bibendum.
@@ -92,14 +93,14 @@ export default function Home() {
         </div>
         <div className="bg-[url('/home-images/grab-pizza.jpg')] relative w-full bg-cover bg-center flex h-[600px] items-center justify-center gap-1">
           <div className="absolute inset-0 bg-black/50"></div>
-          <div className="z-10 flex">
-            <div className="w-[400px]">
+          <div className="z-10 flex gap-5">
+            <div className="w-[500px]">
               <h1 className="text-7xl justify-self-start text-white">
                 BRINGING HAPPINES TO YOU
               </h1>
               <p className="text-lg   text-white">
                 Tellus id nisl quis at sollicitudin nisl nisi <br /> tincidunt
-                purus .{" "}
+                purus .
               </p>
             </div>
             <div className="flex p-2 gap-5">
@@ -158,7 +159,7 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-20">
             <div className="flex flex-col items-center">
               <img
-                src="/menu-images/alfredo.jpg"
+                src="/menu-images/pasta-menu.jpg"
                 alt="deliver-from-app"
                 className="w-[200px] h-[200px] rounded-full"
               />
@@ -166,7 +167,7 @@ export default function Home() {
             </div>
             <div className="pt-10 flex flex-col items-center">
               <img
-                src="/menu-images/pizza1.jpg"
+                src="/menu-images/pizza-menu.jpg"
                 alt="deliver-from-app"
                 className="w-[200px] h-[200px] rounded-full"
               />
@@ -174,7 +175,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               <img
-                src="/menu-images/dessert1.jpg"
+                src="/menu-images/dessert-menu.jpg"
                 alt="deliver-from-app"
                 className="w-[200px] h-[200px] rounded-full"
               />
@@ -216,7 +217,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center  ">
+      <div className="flex flex-col justify-center items-center h-[550px] ">
         <div>
           <div className="px-4 py-5 my-1 text-center">
             <p className="text-red-700 mb-6 font-bold">OUR LOCATION</p>
@@ -256,6 +257,312 @@ export default function Home() {
               Via di S. Vincenzo, 12/34A, 00123 Roma RM, Italy. +39 123 456 7890
             </p>
           </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center">
+        <div className="grid grid-cols-2 gap-20 ">
+          <div className="justify-self-start w-[300px]">
+            <p className="mb-3 text-red-700">JOIN THE TABLE</p>
+            <h1 className="text-5xl fw-bold text-red-700 mb-3">
+              FRANCHISE OPPORTUNITIES
+            </h1>
+          </div>
+          <div className="justify-self-start w-[500px]">
+            <p className="mb-4">
+              Fermentum non quis vitae viverra ipsum eget tincidunt consequat ac
+              velit leo, rutrum tellus augue dolor leo massa augue rhoncus
+              pellentesque pulvinar pellentesque potenti cras arcu praesent urna
+              a, vitae mattis pellentesque rhoncus cursus enim ac eu justo.
+            </p>
+            <button
+              type="button"
+              className="btn  btn-lg px-4 gap-3 font-bold text-red-700 border-red-700"
+              fdprocessedid="iq7j9"
+            >
+              GET IN TOUCH
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-rows-2">
+        <div className="grid grid-cols-6 ">
+          <div>
+            <img
+              src="/home-images/group1.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+          <div>
+            <img
+              src="/home-images/group2.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+          <div>
+            <img
+              src="/home-images/group3.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+          <div className="col-span-2 flex items-center p-5 bg-red-500">
+            <div>
+              <h1 className="text-4xl fw-bold text-white mb-3">
+                FOLLOW THE @PIZZERIA
+              </h1>
+              <p className="text-white">
+                Leo nulla cras augue eros, diam vivamus et lectus volutpat at
+                facilisi tortor porta.
+              </p>
+              <button
+                type="button"
+                className="btn  btn-lg px-4 gap-3 font-bold text-white border-white"
+                fdprocessedid="iq7j9"
+              >
+                GET IN TOUCH
+              </button>
+            </div>
+          </div>
+          <div>
+            <img
+              src="/home-images/group4.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-6">
+          <div>
+            <img
+              src="/home-images/group5.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+          <div>
+            <img
+              src="/home-images/group6.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+          <div>
+            <img
+              src="/home-images/group7.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+          <div>
+            <img
+              src="/home-images/group8.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+          <div>
+            <img
+              src="/home-images/group9.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+          <div>
+            <img
+              src="/home-images/group10.jpg"
+              alt=""
+              className="w-[100%] h-[100%]"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-200 h-[77vh]">
+        <div className="container col-xxl-8 px-4 py-5  h-[100%]">
+          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div className="col-10 col-sm-8 col-lg-6">
+              <img
+                src="/home-images/download-now.jpg"
+                className="d-block mx-lg-auto img-fluid rounded-lg"
+                alt="Bootstrap Themes"
+                width="380"
+                height="380"
+                loading="lazy
+              "
+              />
+            </div>
+            <div className="col-lg-6">
+              <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                FREE DELIVERY!
+              </h1>
+              <h1 className="display-3 fw-bold text-body-emphasis lh-1 mb-3">
+                DOWNLOAD THE APP NOW!
+              </h1>
+              <p>
+                Malesuada dignissim non, aliquam id tincidunt amet in sed et
+                gravida pulvinar ipsum mauris etiam mattis nisl.
+              </p>
+              <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  className="btn  btn-lg px-4 gap-3 font-bold border-red-700 text-red-700"
+                  fdprocessedid="iq7j9"
+                >
+                  <FontAwesomeIcon icon={faGooglePlay} />
+                  GOOGLE PLAY
+                </button>
+                <button
+                  type="button"
+                  className="btn  btn-lg px-4 gap-3 font-bold border-red-700 text-red-700"
+                  fdprocessedid="iq7j9"
+                >
+                  <FontAwesomeIcon icon={faApple} />
+                  APP STORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex">
+        <div className="container">
+          <footer className="py-5">
+            <div className="row">
+              <div className="col-6 col-md-2 mb-3">
+                <h5>ABOUT US</h5>
+                <ul className="nav flex-column">
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      Our Story
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      Our Locations
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      Current Deals
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-6 col-md-2 mb-3">
+                <h5>OUR MENU</h5>
+                <ul className="nav flex-column">
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      Pizza
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      Pasta
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      Dessert
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      Take & Bake
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-6 col-md-2 mb-3">
+                <h5>OUR LOCATION</h5>
+                <ul className="nav flex-column">
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      The Pizzeria Rome
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      The Pizzeria Madrid
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      The Pizzeria Paris
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-body-secondary">
+                      The Pizzeria Miami
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div className="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" className="visually-hidden">
+                      Email address
+                    </label>
+                    <input
+                      id="newsletter1"
+                      type="email"
+                      className="form-control"
+                      placeholder="Email address"
+                      fdprocessedid="fjqm9z"
+                    />
+                    <button
+                      className="btn btn-primary"
+                      type="button"
+                      fdprocessedid="3bb2om"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>© 2025 Company, Inc. All rights reserved.</p>
+              <ul className="list-unstyled d-flex">
+                <li className="ms-3">
+                  <a
+                    className="link-body-emphasis"
+                    href="#"
+                    aria-label="Instagram"
+                  >
+                    <svg className="bi" width="24" height="24">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li className="ms-3">
+                  <a
+                    className="link-body-emphasis"
+                    href="#"
+                    aria-label="Facebook"
+                  >
+                    <svg
+                      className="bi"
+                      width="24"
+                      height="24"
+                      aria-hidden="true"
+                    >
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
         </div>
       </div>
     </main>
