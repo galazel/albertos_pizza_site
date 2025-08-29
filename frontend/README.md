@@ -31,8 +31,9 @@ Welcome to the Pizzeria Website project! This web application serves as an onlin
 ## Technologies Used
 
 - HTML5, CSS3, JavaScript
-- (Optionally add frameworks/libraries, e.g., React, Vue, Bootstrap)
-- (Add backend technology if applicable, e.g., Node.js, Express)
+- React
+- TailwindCSS
+- Bootstrap
 
 ## Getting Started
 
