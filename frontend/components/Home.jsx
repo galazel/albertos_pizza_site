@@ -3,6 +3,8 @@ import NavigationBar from "./common/NavigationBar";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGooglePlay, faApple } from "@fortawesome/free-brands-svg-icons";
+import Footer from "./common/Footer";
+import Locations from "./common/Locations";
 
 export default function Home() {
   return (
@@ -217,48 +219,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center h-[550px] ">
-        <div>
-          <div className="px-4 py-5 my-1 text-center">
-            <p className="text-red-700 mb-6 font-bold">OUR LOCATION</p>
-            <h1 className="text-5xl fw-bold text-black mb-3">
-              FIND THE PIZZERIA NEAR YOU
-            </h1>
-            <div className="col-lg-6 mx-auto">
-              <p className="lead mb-4 text-black">
-                Cursus ultricies in maecenas pulvinar ultrices integer quam
-                amet, semper dictumst sit interdum ut venenatis pellentesque.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex h-[450px] gap-5">
-          <div className="flex flex-col items-center gap-3 w-[200px]">
-            <p className="text-2xl text-red-700 font-bold">ROME</p>
-            <p className="text-center font-bold">
-              Via di S. Vincenzo, 12/34A, 00123 Roma RM, Italy. +39 123 456 7890
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-3 w-[200px]">
-            <p className="text-2xl text-red-700 font-bold ">Florence</p>
-            <p className="text-center font-bold">
-              Via di S. Vincenzo, 12/34A, 00123 Roma RM, Italy. +39 123 456 7890
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-3 w-[200px]">
-            <p className="text-2xl text-red-700 font-bold">Bologna</p>
-            <p className="text-center font-bold">
-              Via di S. Vincenzo, 12/34A, 00123 Roma RM, Italy. +39 123 456 7890
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-3 w-[200px]">
-            <p className="text-2xl text-red-700 font-bold">NEW YORK</p>
-            <p className="text-center font-bold">
-              Via di S. Vincenzo, 12/34A, 00123 Roma RM, Italy. +39 123 456 7890
-            </p>
-          </div>
-        </div>
-      </div>
+      {<Locations />}
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-2 gap-20 ">
           <div className="justify-self-start w-[300px]">
@@ -284,6 +245,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="grid grid-rows-2">
         <div className="grid grid-cols-6 ">
           <div>
@@ -425,146 +387,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex">
-        <div className="container">
-          <footer className="py-5">
-            <div className="row">
-              <div className="col-6 col-md-2 mb-3">
-                <h5>ABOUT US</h5>
-                <ul className="nav flex-column">
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      Our Story
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      Our Locations
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      Current Deals
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-6 col-md-2 mb-3">
-                <h5>OUR MENU</h5>
-                <ul className="nav flex-column">
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      Pizza
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      Pasta
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      Dessert
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      Take & Bake
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-6 col-md-2 mb-3">
-                <h5>OUR LOCATION</h5>
-                <ul className="nav flex-column">
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      The Pizzeria Rome
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      The Pizzeria Madrid
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      The Pizzeria Paris
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-body-secondary">
-                      The Pizzeria Miami
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-md-5 offset-md-1 mb-3">
-                <form>
-                  <h5>Subscribe to our newsletter</h5>
-                  <p>Monthly digest of what's new and exciting from us.</p>
-                  <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                    <label for="newsletter1" className="visually-hidden">
-                      Email address
-                    </label>
-                    <input
-                      id="newsletter1"
-                      type="email"
-                      className="form-control"
-                      placeholder="Email address"
-                      fdprocessedid="fjqm9z"
-                    />
-                    <button
-                      className="btn btn-primary"
-                      type="button"
-                      fdprocessedid="3bb2om"
-                    >
-                      Subscribe
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-              <p>© 2025 Company, Inc. All rights reserved.</p>
-              <ul className="list-unstyled d-flex">
-                <li className="ms-3">
-                  <a
-                    className="link-body-emphasis"
-                    href="#"
-                    aria-label="Instagram"
-                  >
-                    <svg className="bi" width="24" height="24">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li className="ms-3">
-                  <a
-                    className="link-body-emphasis"
-                    href="#"
-                    aria-label="Facebook"
-                  >
-                    <svg
-                      className="bi"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                    >
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </footer>
-        </div>
-      </div>
+      {<Footer />}
     </main>
   );
 }
