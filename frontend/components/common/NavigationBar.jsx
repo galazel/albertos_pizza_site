@@ -33,7 +33,7 @@ export default function NavigationBar() {
         <header className="d-flex justify-content-center py-3">
           <ul className="nav nav-pill">
             <li className="nav-item">
-              <Link to="/home" className="nav-link text-white" aria-current="page" >
+              <Link to="/" className="nav-link text-white" aria-current="page" >
                 HOME
               </Link>
             </li>

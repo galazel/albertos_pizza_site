@@ -9,8 +9,7 @@ import Contact from '../components/Contact'
 function App() {
     return (
         <Routes>
-            <Route path='/' element = {<NavigationBar/>}/>
-            <Route path='/home' element = {<Home/>}/>
+            <Route path='/' element = {<Home/>}/>
             <Route path='/menu' element = {<Menu/>}/>
             <Route path='/about' element = {<About/>}/>
             <Route path='/offers' element = {<Offers/>}/>
