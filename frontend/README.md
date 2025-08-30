@@ -1,12 +1,70 @@
-# React + Vite
+# Pizzeria Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Pizzeria Website project! This web application serves as an online presence for a restaurant, featuring information about the restaurant, the menu, special offers, and ways for customers to get in touch.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Pages](#pages)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Home:** Introduction to the restaurant and a showcase of featured foods.
+- **About:** Information about our story, team, and values.
+- **Menu:** Browse our selection of pizzas, pastas, and desserts.
+- **Offers:** View current deals and special offers.
+- **Contact:** Get in touch via a contact form or find our location and contact info.
+
+## Pages
+
+1. **Home:** Welcomes visitors and highlights popular dishes.
+2. **About:** Shares the restaurant's background and mission.
+3. **Menu:** Displays all available foods with descriptions and prices.
+4. **Offers:** Lists special discounts or limited-time promotions.
+5. **Contact:** Includes a form for customer inquiries and essential restaurant details.
+
+## Technologies Used
+
+- HTML5, CSS3, JavaScript
+- Bootstrap, React, TailwindCSS
+
+## Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/pizzeria-website.git
+   cd pizzeria-website
+   ```
+2. **Install dependencies (if applicable):**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm start
+   ```
+
+4. **Open your browser and navigate to:**
+   ```
+   http://localhost:3000
+   ```
+
+## Usage
+
+- Browse the menu to view delicious pizzas, pastas, and desserts.
+- Check out the offers page for discounts and deals.
+- Use the contact page to send inquiries or feedback.
+
+## Contributing
+
+Pull requests are welcome! If you'd like to contribute, please fork the repository and submit changes via a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
