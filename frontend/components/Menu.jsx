@@ -9,7 +9,7 @@ export default function Menu() {
     },
     {
       image: "/menu-images/pasta-menu.jpg",
-      name: "Freshly prepared fettuccine pasta swirled in homemade cream sauce.",
+      name: "FETTUCCINE ALFREDO",
       description: "With Chianti-braised meat sauce and fresh basil.",
     },
     {
@@ -104,6 +104,60 @@ export default function Menu() {
         "Homemade with ladyfingers soaked in espresso, layered with fresh mascarpone cheese.",
     },
   ];
+  const menuNames = [
+    {
+      name: "Pasta",
+      description:
+        "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci",
+      items : pastaItems
+    },
+    {
+      name: "Pizza",
+      description:
+        "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci.",
+      items : pizzaItems
+      },
+    {
+      name: "Dessert",
+      description:
+        "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci.",
+      items : dessertItems
+      },
+  ];
+
+  const handleItems = (items) => {
+    return (
+      <div className="grid grid-cols-2 gap-1 ">
+        {items.map((item, index) => (
+          <div className="flex gap-2 w-full " key={index}>
+            <img src={item.image} alt="" className="w-[200px] rounded-lg" />
+            <div className="flex flex-col">
+              <h3 className="text-2xl fw-bold ">{item.name}</h3>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const handleMenuContainer = (name, index) => {
+    return (
+      <div
+        id={name}
+        key={index}
+        className="flex justify-center h-[90vh] p-20"
+      >
+        <div className=" grid grid-rows-[100px,1fr] w-[60vw] p-2 gap-2">
+          <div className="grid grid-cols-[1fr,1fr] ">
+            <h2 className="text-5xl fw-bold ">{name.name}</h2>
+            <p>{name.description}</p>
+          </div>
+          {handleItems(name.items)}
+        </div>
+      </div>
+    );
+  };
 
   return (
     <main className="bg-[url('/menu-images/menu-bg.jpg')] h-[60vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative ">
@@ -144,10 +198,7 @@ export default function Menu() {
           </div>
         </div>
       </div>
-      <div id="pasta" className="flex bg-blue-300 justify-center h-[90vh] p-20">
-      </div>
-      <div id="pizza"></div>
-      <div id="dessert"></div>
+      {menuNames.map((name, index) => handleMenuContainer(name, index))}
     </main>
   );
 }
