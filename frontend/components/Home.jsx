@@ -5,8 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGooglePlay, faApple } from "@fortawesome/free-brands-svg-icons";
 import Footer from "./common/Footer";
 import Locations from "./common/Locations";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // ms
+      once: true,     // animate only once
+    });
+  }, []);
   return (
     <main className="bg-[url('/home-images/pizza-bg-home.jpg')] h-[100vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
       <div className="absolute inset-0 bg-black/50"></div>
@@ -15,7 +24,7 @@ export default function Home() {
           <NavigationBar />
         </div>
         <div>
-          <div className="px-4 py-5 my-5 text-center">
+          <div className="px-4 py-5 my-5 text-center "  data-aos="fade-up">
             <h1 className="text-5xl fw-bold text-white">
               AUTHENTIC ITALIAN PIZZERIA
             </h1>
@@ -46,16 +55,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-rows-2 justify-center pt-20 m-20">
-          <div className="flex justify-center">
+        <div className="grid grid-rows-2 justify-center pt-20 m-20" data-aos="zoom-in">
+          <div className="flex justify-center"  data-aos="zoom-in">
             <img
               src="/about-images/pizza4-removebg-preview.png"
               alt="pizza"
               className="w-[700px] rounded-full"
             />
           </div>
-          <div className="flex gap-5 p-2  h-[60vh]">
-            <div className="pb-5 w-[350px] flex flex-col gap-2 justify-center items-center">
+          <div className="flex gap-5 p-2  h-[60vh]" >
+            <div className="pb-5 w-[350px] flex flex-col gap-2 justify-center items-center"  data-aos="fade-right">
               <img
                 src="/home-images/fresh-ingredients.jpg"
                 alt="fresh-ingredients"
@@ -67,7 +76,7 @@ export default function Home() {
                 euismod senectus sed amet felis viverra mi bibendum.
               </p>
             </div>
-            <div className=" pt-5 w-[360px]  flex flex-col gap-1 justify-center items-center">
+            <div className=" pt-5 w-[360px]  flex flex-col gap-1 justify-center items-center" data-aos="fade-up">
               <img
                 src="/home-images/home-made-mozarella.jpg"
                 alt="fresh-ingredients"
@@ -79,7 +88,7 @@ export default function Home() {
                 euismod senectus sed amet felis viverra mi bibendum.
               </p>
             </div>
-            <div className=" w-[350px] pb-5 flex flex-col gap-2 justify-center items-center">
+            <div className=" w-[350px] pb-5 flex flex-col gap-2 justify-center items-center" data-aos="fade-left">
               <img
                 src="/home-images/home-made-sauce.jpg"
                 alt="fresh-ingredients"
@@ -93,7 +102,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[url('/home-images/grab-pizza.jpg')] relative w-full bg-cover bg-center flex h-[600px] items-center justify-center gap-1">
+        <div className="bg-[url('/home-images/grab-pizza.jpg')]  relative w-full bg-cover bg-center flex h-[600px] items-center justify-center gap-1"  data-aos="fade-up">
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="z-10 flex gap-5">
             <div className="w-[500px]">
@@ -106,7 +115,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex p-2 gap-5">
-              <div className="flex flex-col items-center ">
+              <div className="flex flex-col items-center " data-aos="zoom-in">
                 <img
                   src="/common-images/delivery-app.jpg"
                   alt="deliver-from-app"
@@ -114,7 +123,7 @@ export default function Home() {
                 />
                 <p className="text-white text-2xl">ONLINE DELIVERY</p>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center" data-aos="zoom-in">
                 <img
                   src="/common-images/grab_food.jpg"
                   alt="grab-food"
@@ -122,7 +131,7 @@ export default function Home() {
                 />
                 <p className="text-white text-2xl">CLICK & COLLECT</p>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center" data-aos="zoom-in">
                 <img
                   src="/common-images/restaurant_dining.jpg"
                   alt="restaurant dining"
