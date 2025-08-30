@@ -144,18 +144,7 @@ export default function Menu() {
           </div>
         </div>
       </div>
-      <div id="pasta" className="flex bg-blue-300 justify-center h-[90vh] ">
-        <div className="bg-red-300 w-[150vh] p-20 flex flex-col gap-5">
-          <div className="flex gap-5">
-            <h1 className="text-5xl fw-bold text-white w-[50rem]">PASTA</h1>
-            <p className="w-[60rem]">
-              Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus
-              mattis risus metus in suscipit scelerisque eu duis penatibus eros
-              magna cursus elementum orci.
-            </p>
-          </div>
-          <div className="grid grid-rows-2 gap-5"></div>
-        </div>
+      <div id="pasta" className="flex bg-blue-300 justify-center h-[90vh] p-20">
       </div>
       <div id="pizza"></div>
       <div id="dessert"></div>
