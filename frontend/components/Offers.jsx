@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
 
 import NavigationBar from "./common/NavigationBar";
 import Locations from "./common/Locations";
 import FreeDelivery from "./common/FreeDelivery";
 import Footer from "./common/Footer";
+import Deals from "./common/Deals";
 export default function Offers() {
   return (
-   <main className="bg-[url('/menu-images/menu-bg.jpg')] h-[60vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
+    <main className="bg-[url('/menu-images/menu-bg.jpg')] bg-fixed h-[60vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="z-10">
         <NavigationBar />
@@ -20,18 +21,13 @@ export default function Offers() {
         </div>
       </div>
       <div className="flex justify-center items-center mt-32">
-        <div className="flex flex-col gap-5">
-          <div className="">
-            <h1 className="text-5xl font-bold">BEST DEALS</h1>
-          </div>
-          <div className="grid grid-cols-2 gap-5">
-              <div className="col-span-2"></div>
+        <div className="flex flex-col">
+          <div>
+            <Deals />
           </div>
         </div>
       </div>
-      <Locations />
-      <FreeDelivery />
       <Footer />
     </main>
-  )
+  );
 }

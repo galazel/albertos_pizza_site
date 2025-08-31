@@ -17,7 +17,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <main className="bg-[url('/home-images/pizza-bg-home.jpg')] h-[100vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
+    <main className="bg-fixed bg-[url('/home-images/pizza-bg-home.jpg')] h-[100vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="z-10">
         <div>
@@ -195,39 +195,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-5 w-[70vw] p-20 mx-auto">
-        <div className="flex justify-between">
-          <h1 className="text-6xl fw-bold text-red-700">BEST DEALS!</h1>
-          <button
-            type="button"
-            className="btn  btn-lg px-4 gap-3 font-bold text-red-700 border-red-700"
-            fdprocessedid="iq7j9"
-          >
-            VIEW ALL MENU
-          </button>
-        </div>
-        <div className="grid grid-cols-[1fr,1fr] gap-10">
-          <div className="col-span-2 w-[100%] bg-green-300 rounded-full">
-            <img
-              src="/offers-images/big-meat-monsta.jpg"
-              className="rounded-3xl"
-              alt=""
-            />
-          </div>
-          <div className="flex gap-10">
-            <img
-              src="/offers-images/combo-double-box.jpg"
-              className="rounded-3xl"
-              alt=""
-            />
-            <img
-              src="/offers-images/italian-stalion.jpg"
-              className="rounded-3xl"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      
       {<Locations />}
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-2 gap-20 ">

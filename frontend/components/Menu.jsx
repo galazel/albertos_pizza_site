@@ -240,7 +240,7 @@ export default function Menu() {
   );
 
   return (
-    <main className="bg-[url('/menu-images/menu-bg.jpg')] h-[60vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
+    <main className="bg-fixed bg-[url('/menu-images/menu-bg.jpg')] h-[60vh] w-full bg-cover bg-center flex flex-col gap-y-20 relative">
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="z-10">
         <NavigationBar />
@@ -278,8 +278,6 @@ export default function Menu() {
         </div>
       </div>
       {menuNames.map((menu, index) => handleMenuContainer(menu, index))}
-      <Locations/>
-      <FreeDelivery/>
       <Footer/>
     </main>
   );
