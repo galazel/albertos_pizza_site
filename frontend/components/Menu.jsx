@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import NavigationBar from "./common/NavigationBar";
+import Locations from "./common/Locations";
+import FreeDelivery from "./common/FreeDelivery";
+import Footer from "./common/Footer";
 
 export default function Menu() {
   const pastaItems = [
@@ -107,9 +110,24 @@ export default function Menu() {
   ];
 
   const menuNames = [
-    { name: "Pasta", description: "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci", items: pastaItems },
-    { name: "Pizza", description: "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci.", items: pizzaItems },
-    { name: "Dessert", description: "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci.", items: dessertItems },
+    {
+      name: "Pasta",
+      description:
+        "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci",
+      items: pastaItems,
+    },
+    {
+      name: "Pizza",
+      description:
+        "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci.",
+      items: pizzaItems,
+    },
+    {
+      name: "Dessert",
+      description:
+        "Eros ornare nullam phasellus morbi mi rhoncus nunc neque risus mattis risus metus in suscipit scelerisque eu duis penatibus eros magna cursus elementum orci.",
+      items: dessertItems,
+    },
   ];
 
   const handleItems = (items) => (
@@ -117,7 +135,7 @@ export default function Menu() {
       {items.map((item, index) => (
         <motion.div
           key={index}
-          className="flex gap-4 w-full"
+          className="flex gap-4 w-full "
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -139,23 +157,86 @@ export default function Menu() {
   );
 
   const handleMenuContainer = (menu, index) => (
-    <motion.div
-      id={menu.name.toLowerCase()}
-      key={index}
-      className="flex justify-center py-20"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-    >
-      <div className="grid grid-rows-[auto,1fr] w-[60vw] gap-6">
-        <div className="grid grid-cols-[1fr,1fr] gap-4">
-          <h2 className="text-5xl font-bold">{menu.name}</h2>
-          <p>{menu.description}</p>
+    <>
+      <motion.div
+        id={menu.name.toLowerCase()}
+        key={index}
+        className="flex justify-center py-20"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <div className="grid grid-rows-[auto,1fr] w-[60vw] gap-6">
+          <div className="grid grid-cols-[1fr,1fr] gap-4">
+            <h2 className="text-5xl font-bold">{menu.name}</h2>
+            <p>{menu.description}</p>
+          </div>
+          {handleItems(menu.items)}
         </div>
-        {handleItems(menu.items)}
+      </motion.div>
+      <div className="flex justify-center  items-center">
+        {menu.name.toLowerCase() == "pizza" && (
+          <div className=" flex flex-col gap-3">
+            <div className="flex  flex-col justify-center items-center gap-3">
+              <h3 className="text-5xl font-bold">CRAFT YOUR OWN</h3>
+              <p>
+                Erat pharetra suscipit tincidunt in eget ultricies lectus
+                posuere arcu.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-5 " >
+              <div className="border-b border-black">
+                <p>STEP 1</p>
+                <p>CHOOSE YOUR SIZE</p>
+                <p>8", 12", 14", 18"</p>
+              </div>
+              <div className="row-span-2 border-l border-black pl-2">
+                <p>STEP 3</p>
+                <p>CHOOSE YOUR TOPPINGS</p>
+                <ul className="flex flex-col gap-2">
+                  <p>TRADITIONAL TOPPING</p>
+                  <div className="grid grid-cols-2">
+                    <div>
+                      <li>Extra Mozzarella</li>
+                      <li>Canadian Bacon</li>
+                      <li>Sliced Sausage</li>
+                      <li>Sun-Dried Tomatoes</li>
+                      <li>Roasted Peppers</li>
+                    </div>
+                    <div>
+                      <li>Fresh Basil</li>
+                      <li>Bell Peppers</li>
+                      <li>Caramelized Onions</li>
+                      <li>Feta Cheese</li>
+                      <li>Italian Beef</li>
+                    </div>
+                  </div>
+                  <p>PREMIUM TOPPING</p>
+                  <div className="grid grid-cols-2">
+                    <div>
+                      <li>Ricotta Cheese</li>
+                      <li>Goat Cheese</li>
+                      <li>Prosciutto di Parma</li>
+                    </div>
+                    <div>
+                      <li>Fresh Mozzarella</li>
+                      <li>Portabella Mushrooms</li>
+                      <li>Fresh Arugula</li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div>
+                <p>STEP 2</p>
+                <p>CHOOSE YOUR SAUCE</p>
+                <p>Marinara, BBQ, Spicy BBQ, oil, alfredo, or hot sauce</p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-    </motion.div>
+    </>
   );
 
   return (
@@ -197,6 +278,9 @@ export default function Menu() {
         </div>
       </div>
       {menuNames.map((menu, index) => handleMenuContainer(menu, index))}
+      <Locations/>
+      <FreeDelivery/>
+      <Footer/>
     </main>
   );
 }
