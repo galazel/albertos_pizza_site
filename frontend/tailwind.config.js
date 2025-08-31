@@ -14,6 +14,7 @@ export default {
         armata: ["Armata", "sans-serif"],
         "lexend-exa": ["Lexend Exa", "sans-serif"],
         "lexend-giga": ["Lexend Giga", "sans-serif"],
+        montserrat : ["Montserrat","sans-serif"]
       },
     },
   },

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function NavigationBar() {
   return (
-    <header className="grid grid-rows-2">
+    <nav className="grid grid-rows-2">
       <div className="container">
         <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
           <div className="col-md-3 mb-2 mb-md-0 d-flex gap-3">
@@ -60,6 +60,6 @@ export default function NavigationBar() {
           </ul>
         </header>
       </div>
-    </header>
+    </nav>
   );
 }

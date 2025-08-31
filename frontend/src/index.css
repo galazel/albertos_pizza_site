@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Armata&family=Lexend+Exa:wght@100..900&family=Lexend+Giga:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Armata&family=Birthstone&family=Lexend+Exa:wght@130&family=Lexend+Giga:wght@100..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 @import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -7,9 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body
-{
-    font-family: "Lexend Exa";
+@layer base{
+    body{
+        @apply font-montserrat
+    }
 }
 
 
