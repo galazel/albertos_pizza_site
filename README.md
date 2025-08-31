@@ -1,4 +1,4 @@
-# Pizzeria Website
+# Alberto's Pizza Website
 
 Welcome to the Pizzeria Website project! This web application serves as an online presence for a restaurant, featuring information about the restaurant, the menu, special offers, and ways for customers to get in touch.
 
