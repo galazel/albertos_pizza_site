@@ -1,7 +1,11 @@
 package com.backend.pizzeria.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends JpaRepository<User,Long>{
+import com.backend.pizzeria.model.UserModel;
+
+@Repository
+public interface UserRepository extends JpaRepository<UserModel,Long>{
     
 }
