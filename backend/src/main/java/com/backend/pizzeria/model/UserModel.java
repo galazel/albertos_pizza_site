@@ -1,5 +1,6 @@
 package com.backend.pizzeria.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -14,6 +15,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -36,7 +38,7 @@ public class UserModel {
     private String email;
     @NotBlank(message = "phoneNumber should not be blank")
     @NotEmpty(message = "phoneNumber should not be empty")
-    @Pattern(regexp = "[\\d{11}", message = "invalid phoneNumber")
+    @Pattern(regexp = "\\d{11}", message = "invalid phoneNumber")
     private String phoneNumber;
     @NotBlank(message = "subject should not be blank")
     @NotEmpty(message = "subject should not be empty")
