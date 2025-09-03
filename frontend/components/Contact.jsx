@@ -96,7 +96,6 @@ export default function Contact() {
       message: "",
     });
   }
-
   const customDiv = (
     <div className="grid grid-cols-[25vw,1fr] bg-white w-[60vw] border-2 rounded-3xl">
       <div className="bg-orange-100 p-5 rounded-3xl">

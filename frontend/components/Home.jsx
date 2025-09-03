@@ -12,8 +12,8 @@ import FreeDelivery from "./common/FreeDelivery";
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // ms
-      once: true,     // animate only once
+      duration: 1000,
+      once: true,
     });
   }, []);
   return (
@@ -24,12 +24,12 @@ export default function Home() {
           <NavigationBar />
         </div>
         <div>
-          <div className="px-4 py-5 my-5 text-center "  data-aos="fade-up">
+          <div className="px-4 py-5 my-5 text-center " data-aos="fade-up">
             <h1 className="text-5xl fw-bold text-white">
-              AUTHENTIC ITALIAN PIZZERIA
+              AUTHENTIC ITALIAN <em className="text-red-700">PIZZERIA</em>
             </h1>
-            <div className="col-lg-6 mx-auto">
-              <p className="lead mb-4 text-white">
+            <div className="col-lg-6 mx-auto ">
+              <p className="lead mb-4 text-white mt-2">
                 Welcome to The Pizzeria, where tradition meets taste! Enjoy our
                 handcrafted pizzas made with fresh ingredients, classic Italian
                 recipes, and a warm, inviting atmosphere. Whether you're dining
@@ -39,32 +39,30 @@ export default function Home() {
               <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <button
                   type="button"
-                  className="btn bg-red-800 btn-lg px-4 gap-3 text-white"
-                  fdprocessedid="iq7j9"
+                  className="btn border-white text-white btn-lg px-4 hover:bg-red-700"
                 >
-                  BOOK A TABLE
-                </button>
-                <button
-                  type="button"
-                  className="btn border-white text-white btn-lg px-4"
-                  fdprocessedid="24sg5g"
-                >
-                  TAKEAWAY
+                  <Link to="/contact">BOOK A TABLE</Link>
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-rows-2 justify-center pt-20 m-20" data-aos="zoom-in">
-          <div className="flex justify-center"  data-aos="zoom-in">
+        <div
+          className="grid grid-rows-2 justify-center pt-20 m-20"
+          data-aos="zoom-in"
+        >
+          <div className="flex justify-center" data-aos="zoom-in">
             <img
               src="/about-images/pizza4-removebg-preview.png"
               alt="pizza"
               className="w-[700px] rounded-full"
             />
           </div>
-          <div className="flex gap-5 p-2  h-[60vh]" >
-            <div className="pb-5 w-[350px] flex flex-col gap-2 justify-center items-center"  data-aos="fade-right">
+          <div className="flex gap-5 p-2  h-[60vh]">
+            <div
+              className="pb-5 w-[350px] flex flex-col gap-2 justify-center items-center"
+              data-aos="fade-right"
+            >
               <img
                 src="/home-images/fresh-ingredients.jpg"
                 alt="fresh-ingredients"
@@ -76,7 +74,10 @@ export default function Home() {
                 euismod senectus sed amet felis viverra mi bibendum.
               </p>
             </div>
-            <div className=" pt-5 w-[360px]  flex flex-col gap-1 justify-center items-center" data-aos="fade-up">
+            <div
+              className=" pt-5 w-[360px]  flex flex-col gap-1 justify-center items-center"
+              data-aos="fade-up"
+            >
               <img
                 src="/home-images/home-made-mozarella.jpg"
                 alt="fresh-ingredients"
@@ -88,7 +89,10 @@ export default function Home() {
                 euismod senectus sed amet felis viverra mi bibendum.
               </p>
             </div>
-            <div className=" w-[350px] pb-5 flex flex-col gap-2 justify-center items-center" data-aos="fade-left">
+            <div
+              className=" w-[350px] pb-5 flex flex-col gap-2 justify-center items-center"
+              data-aos="fade-left"
+            >
               <img
                 src="/home-images/home-made-sauce.jpg"
                 alt="fresh-ingredients"
@@ -102,7 +106,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[url('/home-images/grab-pizza.jpg')]  relative w-full bg-cover bg-center flex h-[600px] items-center justify-center gap-1"  data-aos="fade-up">
+        <div
+          className="bg-[url('/home-images/grab-pizza.jpg')]  relative w-full bg-cover bg-center flex h-[600px] items-center justify-center gap-1"
+          data-aos="fade-up"
+        >
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="z-10 flex gap-5">
             <div className="w-[500px]">
@@ -161,7 +168,7 @@ export default function Home() {
                     className="btn  btn-lg px-4 gap-3 font-bold text-red-700 border-red-700"
                     fdprocessedid="iq7j9"
                   >
-                    VIEW ALL MENU
+                    <Link to="/menu">VIEW ALL MENU</Link>
                   </button>
                 </div>
               </div>
@@ -195,7 +202,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       {<Locations />}
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-2 gap-20 ">
@@ -217,7 +224,7 @@ export default function Home() {
               className="btn  btn-lg px-4 gap-3 font-bold text-red-700 border-red-700"
               fdprocessedid="iq7j9"
             >
-              GET IN TOUCH
+              <Link to="/contact"> GET IN TOUCH</Link>
             </button>
           </div>
         </div>
@@ -317,8 +324,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
-      <FreeDelivery/>
+
+      <FreeDelivery />
       <Footer />
     </main>
   );
