@@ -3,17 +3,16 @@ package com.backend.pizzeria.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.backend.pizzeria.dto.UserDTO;
 import com.backend.pizzeria.service.UserService;
 
 
-
-
 @RestController
+@CrossOrigin("http://localhost:5173")
 public class UserController 
 {
     private final UserService service;
