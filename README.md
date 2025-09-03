@@ -31,7 +31,7 @@ Welcome to the Alberto's Pizza Website project! This web application serves as a
 ## Technologies Used
 
 - HTML5, CSS3, JavaScript
-- Bootstrap, React, TailwindCSS
+- Bootstrap, React, TailwindCSS, Springboot
 
 ## Getting Started
 
